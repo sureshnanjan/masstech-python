@@ -1,7 +1,7 @@
 import datetime
 import os
 
-root = os.path.join('.', 'food')
+root = os.path.join('.', 'data')
 for directory, subdir_list, file_list in os.walk(root):
     print("Inside the loop")
     for name in file_list:
