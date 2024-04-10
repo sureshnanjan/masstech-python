@@ -4,7 +4,7 @@ Selection - used for decisions and branching
 Repetition - used for looping, i.e., repeating a piece of code multiple times.
 """
 ## This is a Sequential statement
-a = 20
+a = 0
 b = 10
 c = a - b
 print("Subtraction is : ", c)
@@ -25,6 +25,8 @@ def demo_if_else():
         print("n is even")
     else:
         print("n is odd")
+    print(dir())
+    print(__name__)
 
 
 def demo_if():
@@ -61,6 +63,7 @@ def demo_elif():
 
 def demo_for_loop():
     print("1st example")
+    a = 3
     lst = [1, 2, 3]
     for i in range(len(lst)):
         print(lst[i], end=" \n")
@@ -85,9 +88,15 @@ def demo_list_comprehension():
     """
     numbers = [12, 13, 14, ]
     doubled = [x * 2 for x in numbers]
+    result = []
+    for item in numbers:
+        result.append(item * 2)
+        #result.extend(item * 2)
+
     filtered_doubled = [x * 2 for x in numbers if x % 2 == 0]
-    print(doubled)
-    # print(filtered_doubled)
+    #print(doubled)
+    #print(result)
+    #print(filtered_doubled)
     matrix = [[j for j in range(3)] for i in range(3)]
     # print(matrix)
 
@@ -95,7 +104,7 @@ def demo_list_comprehension():
            else "Odd number" for i in range(8)]
     # print(lis)
 
-    names = ["G", "G", "g"]
+    names = ["A", "B", "C","D"]
     ages = [25, 30, 35]
     person_tuples = [(name, age) for name, age in zip(names, ages)]
     print(person_tuples)
@@ -115,7 +124,7 @@ def demo_list_comprehension():
     new_list = [digit_sum(i) for i in List if i & 1]
 
     # Displaying new list
-    print(new_list)
+    #print(new_list)
 
 
 def demo_dictionary_comprehension():
@@ -127,6 +136,13 @@ def demo_dictionary_comprehension():
     myDict = {k: v for (k, v) in zip(keys, values)}
 
     # We can use below too
-    # myDict = dict(zip(keys, values))
+    myDict = dict(zip(keys, values))
 
     print(myDict)
+
+#print(dir())
+#print(__name__)
+#demo_for_loop()
+
+#demo_list_comprehension()
+demo_dictionary_comprehension()

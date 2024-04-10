@@ -3,6 +3,7 @@
 """
 print(dir())
 
+
 def simple_decorator():
     pass
 
@@ -10,10 +11,11 @@ def simple_decorator():
 def decorator_with_args(arg1):
     pass
 
-
+#Callable  Functions - methods
 def basic_function():
     # "def" funcname "(" ")"
     print("Hello Friends")
+
 
 
 
@@ -37,7 +39,8 @@ def decorated_function():
     pass
 
 
-basic_function_with_args(basic_function)
-print(len("Suresh"))
+#basic_function_with_args(basic_function)
+#print(len("Suresh"))
 #basic_function_with_args(100)
-print(len(100))
+#print(len(100))
+decorator_with_args()

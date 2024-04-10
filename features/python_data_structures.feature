@@ -10,5 +10,5 @@ Feature: Python Data Structures
     |2|even|
     Then python should give me the result
       """
-      6,12,18,4,12,20,28
+      6,12,18,4,12,20,28,11,12,13
       """
