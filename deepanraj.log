@@ -61,6 +61,45 @@ PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git status
 On branch deepanraj-branch
 nothing to commit, working tree clean
 PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> Stop-Transcript
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git add .\deepanraj.log
+The following paths are ignored by one of your .gitignore files:
+deepanraj.log
+hint: Use -f if you really want to add them.
+hint: Turn this message off by running
+hint: "git config advice.addIgnoredFile false"
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git add -f .\deepanraj.log
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git status
+On branch deepanraj-branch
+Your branch is up to date with 'origin/deepanraj-branch'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   deepanraj.log
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git commit -m “Deepanraj adding first file to branch”
+[deepanraj-branch 38fbfc6] Deepanraj adding first file to branch
+ 1 file changed, 67 insertions(+)
+ create mode 100644 deepanraj.log
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git commit
+On branch deepanraj-branch
+Your branch is ahead of 'origin/deepanraj-branch' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   deepanraj.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.20 KiB | 614.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sureshnanjan/masstech-python.git
+   ad7e2c3..38fbfc6  deepanraj-branch -> deepanraj-branch
 **********************
 Windows PowerShell transcript end
 End time: 20240412143305
