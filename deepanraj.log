@@ -1,0 +1,67 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240412143106
+Username: MIT\MITDeepanraj
+RunAs User: MIT\MITDeepanraj
+Configuration Name: 
+Machine: LAP5CD106L37Q (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 29120
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is deepanraj.log
+PS C:\BDD_External_Training\QA-Training> New-Item -Path C:\BDD_External_Training\QA-Training -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\BDD_External_Training\QA-Training
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12-04-2024     14:31                QA-Training
+
+
+PS C:\BDD_External_Training\QA-Training> git --version
+git version 2.44.0.windows.1
+PS C:\BDD_External_Training\QA-Training> git clone https://github.com/sureshnanjan/masstech-python.git
+Cloning into 'masstech-python'...
+remote: Enumerating objects: 38, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 38 (delta 9), reused 38 (delta 9), pack-reused 0
+Receiving objects: 100% (38/38), 9.40 KiB | 1.04 MiB/s, done.
+Resolving deltas: 100% (9/9), done.
+PS C:\BDD_External_Training\QA-Training> cd .\QA-Training\
+PS C:\BDD_External_Training\QA-Training\QA-Training> git clone https://github.com/sureshnanjan/masstech-python.git
+Cloning into 'masstech-python'...
+remote: Enumerating objects: 38, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 38 (delta 9), reused 38 (delta 9), pack-reused 0
+Receiving objects: 100% (38/38), 9.40 KiB | 1.04 MiB/s, done.
+Resolving deltas: 100% (9/9), done.
+PS C:\BDD_External_Training\QA-Training\QA-Training> git status 
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\BDD_External_Training\QA-Training\QA-Training> cd .\masstech-python\
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git checkout -b deepanraj-branch
+Switched to a new branch 'deepanraj-branch'
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> git status 
+On branch deepanraj-branch
+nothing to commit, working tree clean
+PS C:\BDD_External_Training\QA-Training\QA-Training\masstech-python> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240412143305
+**********************
