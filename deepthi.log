@@ -1,0 +1,64 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240415171128
+Username: MIT\LRDeepthi
+RunAs User: MIT\LRDeepthi
+Configuration Name: 
+Machine: LAPPG02V4TT (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 42280
+PSVersion: 5.1.22000.2538
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.2538
+BuildVersion: 10.0.22000.2538
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is deepthi.log
+PS C:\BDD_Training> New-Item -Path C:\BDD_Training -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\BDD_Training
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        15-04-2024     17:12                QA-Training
+
+
+PS C:\BDD_Training> git --versiobn
+unknown option: --versiobn
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+PS C:\BDD_Training> git --version
+git version 2.44.0.windows.1
+PS C:\BDD_Training> cd .\QA-Training\
+PS C:\BDD_Training\QA-Training> git clone https://github.com/sureshnanjan/masstech-python.git
+Cloning into 'masstech-python'...
+remote: Enumerating objects: 44, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 44 (delta 12), reused 43 (delta 11), pack-reused 0
+Receiving objects: 100% (44/44), 11.54 KiB | 787.00 KiB/s, done.
+Resolving deltas: 100% (12/12), done.
+PS C:\BDD_Training\QA-Training> Set-Location .\masstech-python\
+PS C:\BDD_Training\QA-Training\masstech-python> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\BDD_Training\QA-Training\masstech-python> git checkout -b deepthi-branch
+Switched to a new branch 'deepthi-branch'
+PS C:\BDD_Training\QA-Training\masstech-python> git status
+On branch deepthi-branch
+nothing to commit, working tree clean
+PS C:\BDD_Training\QA-Training\masstech-python> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240415171408
+**********************
