@@ -1,0 +1,67 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240417150523
+Username: MIT\SDheena
+RunAs User: MIT\SDheena
+Configuration Name: 
+Machine: LAPPG02V4X4 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 37628
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Dheena.log
+PS C:\Users\SDheena> New-Item -Path C:\Users\SDheena -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Users\SDheena
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        17-04-2024     15:06                QA-Training
+
+
+PS C:\Users\SDheena> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\SDheena> git --version
+git version 2.44.0.windows.1
+PS C:\Users\SDheena> git clone https://github.com/sureshnanjan/masstech-python.git
+remote: Enumerating objects: 44, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 44 (delta 12), reused 43 (delta 11), pack-reused 0
+Receiving objects: 100% (44/44), 11.54 KiB | 1.92 MiB/s, done.
+Resolving deltas: 100% (12/12), done.
+PS C:\Users\SDheena> git clone https://github.com/sureshnanjan/masstech-python.git
+
+PS C:\Users\SDheena> Set-Location masstech-python
+PS C:\Users\SDheena\masstech-python> git status
+
+PS C:\Users\SDheena\masstech-python> 1. git checkout -b Dheena-branch
+At line:1 char:4
++ 1. git checkout -b Dheena-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+At line:1 char:4
++ 1. git checkout -b Dheena-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\SDheena\masstech-python> git checkout -b Dheena-branch
+
+PS C:\Users\SDheena\masstech-python> git status
+
+PS C:\Users\SDheena\masstech-python> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240417151408
+**********************
