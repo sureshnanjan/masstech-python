@@ -30,13 +30,29 @@ def step_impl(context):
 def step_impl(context):
     global result
     print(context.text.rstrip().lstrip().split(','))
-    if list1_filter=='odd':
+    if list1_filter == 'odd':
         result.extend(list1[1::2])
     else:
         result.extend(list1[0::2])
-    if list2_filter=='odd':
+    if list2_filter == 'odd':
         result.extend(list2[1::2])
     else:
         result.extend(list2[0::2])
     print(result)
     assert result == context.text.rstrip().lstrip().split(',')
+
+
+@given(u'I visit heroku app')
+def step_impl(context):
+    # navigate to the webpage
+    raise NotImplementedError(u'STEP: Given I visit heroku app')
+
+
+@when(u'I check the title')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When I check the title')
+
+
+@then(u'it should match "Welcome to the-internet"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then it should match "Welcome to the-internet"')
