@@ -1,0 +1,56 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240418153139
+Username: MIT\LKiruba
+RunAs User: MIT\LKiruba
+Configuration Name: 
+Machine: LAPPG02SHWQ (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 16028
+PSVersion: 5.1.19041.4291
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4291
+BuildVersion: 10.0.19041.4291
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Kiruba.log
+PS C:\Users\LKiruba> New-Item -Path C:/Users/LKiruba/PycharmProjects -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Users\LKiruba\PycharmProjects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18-04-2024     15:31                QA-Training
+
+
+PS C:\Users\LKiruba> git --version
+git version 2.44.0.windows.1
+PS C:\Users\LKiruba> git clone https://github.com/sureshnanjan/masstech-python.git
+Cloning into 'masstech-python'...
+remote: Enumerating objects: 50, done.
+remote: Counting objects: 100% (50/50), done.
+remote: Compressing objects: 100% (36/36), done.
+remote: Total 50 (delta 16), reused 47 (delta 13), pack-reused 0
+Receiving objects: 100% (50/50), 13.13 KiB | 1.88 MiB/s, done.
+Resolving deltas: 100% (16/16), done.
+PS C:\Users\LKiruba> Set-Location masstech-python
+PS C:\Users\LKiruba\masstech-python> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\LKiruba\masstech-python> git checkout -b Kiruba-branch
+Switched to a new branch 'Kiruba-branch'
+PS C:\Users\LKiruba\masstech-python> git status
+On branch Kiruba-branch
+nothing to commit, working tree clean
+PS C:\Users\LKiruba\masstech-python> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240418153316
+**********************
