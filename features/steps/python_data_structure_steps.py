@@ -1,5 +1,6 @@
 from behave import given, when, then, step, fixture
 
+
 list1 = None
 list2 = None
 list1_filter = None

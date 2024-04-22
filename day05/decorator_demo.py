@@ -25,7 +25,8 @@ def my_function(input1, input2):
 my_function(10, 20)
 
 # call after decorating
-
+"""
 result = my_function(10,20)
-if result > 10:
+if int(result) > 10:
     print("pass")
+"""
