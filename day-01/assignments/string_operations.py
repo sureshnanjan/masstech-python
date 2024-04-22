@@ -11,6 +11,7 @@ def make_list_from_string(arg1):
     for char in arg1:
         val_list.append(char)
     print(val_list)
-    assert val_list == ['D', 'e', 'e', 'p', 'a', 'n']  # Example assertion to ensure correctness
+    return val_list
+ #   assert val_list == ['D', 'e', 'e', 'p', 'a', 'n']  # Example assertion to ensure correctness
 
-print(make_list_from_string("Deepan"))
+#print(make_list_from_string("Deepan"))
