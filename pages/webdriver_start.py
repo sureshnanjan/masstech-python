@@ -26,5 +26,6 @@ print(driver.title)
 actual_title = driver.find_element(By.TAG_NAME,"h1").text
 print(actual_title)
 assert actual_title == "Matched Title"
+driver.add_cookie({"optimizelyOptOut":"true"})
 driver.quit()
 
