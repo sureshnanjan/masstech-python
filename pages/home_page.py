@@ -28,8 +28,10 @@ class HomePage(HerokuApp):
 
 
     def go_to_example(self, name:str):
+
         match name.lower():
-            case "addremove":
+            case "add/remove elements":
+                self._browser.find_element(By.LINK_TEXT,"Add/Remove Elements").click()
                 return AddRemovePage(self._browser)
             case _:
                 return self
