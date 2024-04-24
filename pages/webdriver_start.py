@@ -29,3 +29,10 @@ assert actual_title == "Matched Title"
 driver.add_cookie({"optimizelyOptOut":"true"})
 driver.quit()
 
+
+def demo(param1, param2):
+    pass
+
+
+
+demo()
