@@ -27,6 +27,9 @@ class HerokuApp:
     def take_screenshot(self):
         self._browser.take_screenshot()
 
+    def refresh_browser(self):
+        self._browser.refresh()
+
     def _get_element_from_selector(self,selector):
         pass
 
