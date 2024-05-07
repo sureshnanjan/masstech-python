@@ -5,9 +5,9 @@ from selenium.webdriver.common.by import By
 class AddRemovePage(HerokuApp):
     def __init__(self, browser_instance=None):
         self.__locators = {
-            'add_element': {By.XPATH, '/html/body/div[2]/div/div/button'},
-            'added_element': {By.CLASS_NAME, 'added-manually'},
-            'heading': {By.TAG_NAME, "h3"}
+            'add_element': (By.XPATH, "/html/body/div[2]/div/div/button"),
+            'added_element': (By.CLASS_NAME, "added-manually"),
+            'heading': (By.TAG_NAME, "h3")
         }
         super().__init__(browser_instance)
 

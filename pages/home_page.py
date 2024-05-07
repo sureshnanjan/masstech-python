@@ -37,6 +37,7 @@ class HomePage(HerokuApp):
                 self._browser.find_element(By.LINK_TEXT, "A/B Testing").click()
                 return ABTestingPage(self._browser)
             case 'javascriptalerts':
+                #aut = aut.go_to_example("javascript")
                 self._browser.find_element(By.LINK_TEXT, "JavaScript Alerts").click()
                 return JavaScriptAlertsPage(self._browser)
             case _:

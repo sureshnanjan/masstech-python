@@ -6,7 +6,7 @@ def test_simple_alert():
     # english
     aut = HomePage()
     aut.go_to_homepage()
-    aut = aut.go_to_example("javascript")
+    aut = aut.go_to_example("javascriptalerts")
     aut.invoke_simple_alert()
     message_in_alert = aut.get_message()
     aut.accept_message()
